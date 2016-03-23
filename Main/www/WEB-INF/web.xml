@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <display-name>Main</display-name>
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+    <servlet>
+        <description>Root process</description>
+        <display-name>Main</display-name>
+        <servlet-name>Main</servlet-name>
+        <servlet-class>visualk.Main</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Main</servlet-name>
+        <url-pattern>/servlet/Main</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <description>generador d'horitzons</description>
+        <display-name>Hrz</display-name>
+        <servlet-name>Hrz</servlet-name>
+        <servlet-class>visualk.hrz.Hrz</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Hrz</servlet-name>
+        <url-pattern>/hrz/Hrz</url-pattern>
+    </servlet-mapping>
+  
+    <servlet>
+        <description>generador d'imatges</description>
+        <display-name>ImgGenerator</display-name>
+        <servlet-name>ImgGenerator</servlet-name>
+        <servlet-class>visualk.html.ImgGenerator</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ImgGenerator</servlet-name>
+        <url-pattern>/servlet/ImgGenerator</url-pattern>
+    </servlet-mapping>
+</web-app>
+
